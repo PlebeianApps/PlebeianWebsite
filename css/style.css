@@ -97,13 +97,14 @@ h1.section-header {
 	font-size: 2em;
 	border-top: 2px solid #e5e5e5;
 	width: 100%;
-	color: #4d4d4d;
+	color: #333333;
 	padding: 10px 0 5px 0;
 	margin-bottom: 20px;
 }
 
 h1.section-header-top {
 	padding-top:25px;
+	border-top: 0;
 }
 
 /* images */
