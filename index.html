@@ -12,10 +12,19 @@
 <link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection">
 <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700' rel='stylesheet' type='text/css'>
 <!--<link rel="shortcut icon" href="http://www.fleetcreature.com/favicon.ico" type="image/ico" />-->
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+
 
 <script type="text/javascript" src="js/prefixfree.js"></script>
 <script type="text/javascript" src="js/modernizr-2.0.6.js"></script>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="js/jquery.easing-1.3.pack.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
 </head>
 
 <body>
@@ -23,14 +32,18 @@
         <header>
             <img src="images/pleb_logo.png" class="logo">
         </header>
+    </div>
         <nav class="cf">
-            <ul class="cf">
-                <li><a class="selected" href="index.html">Feature</a></li>
-                <li><a href="learn.html">Learn</a></li>
-                <li><a href="signup.html">Products</a></li>
-                <li><a href="team.html">About</a></li>
+            <div class = "container">
+                <ul class="cf">
+                    <li><a class="selected" href="index.html">Featured</a></li>
+                    <li><a href="signup.html">Apps</a></li>
+                    <li><a href="team.html">About</a></li>
+            </div>
         </nav>
-        <section class="main cf">
+        <section class = "main cf">
+            <section class = "featured cf">
+            <div class = "container">
             <section class="content cf">
                 <div class="golden-image">
                     <img src = "images/goldenmind_homescreen.png">
@@ -42,19 +55,94 @@
                             <h2>$2.99</h2>
                         </div>
                     </a>
-                    <a href="signup.html#volunteer" alt="volunteer for ned compost">
-                        <div class="button volunteer cf">
-                            <p>Contact Us</p>
+                    <section>
+                         <!-- golden mind -->
+                        <a id="inline" href="#goldenmind" rel="goldenmind">
+                            <div class="goldenmind button volunteer last span-1">
+                                    <p>Tour the App</p>
+                            </div>
+                            <a id="inline" href="#goldenmind2" rel="goldenmind"></a>
+                            <a id="inline" href="#goldenmind3" rel="goldenmind"></a>
+                        </a>
+                        <div style="display: none;">
+                            <div id="goldenmind" class="popupbox">
+                                <div class="banner dark cf">
+                                    <div class="fL">
+                                        <h2>Golden Mind<h2>
+                                        <h1>Meditation Timer<h1>
+                                    </div>
+                                    <div class="fL">
+                                        <h3>a simple app that created a partnership<h3>
+                                        <h4>and launched Plebeian Apps.<h4>
+                                    </div>
+                                </div>
+                                <div class="popup-content">
+                                    <div class="popup-copy">
+                                        <h1>the inspiration</h1>
+                                        <p>Create a beautiful & simple meditation timer that doesn't display the time while running.</p>
+                                        <p><a href="http://itunes.apple.com/us/app/golden-mind/id466182995?ls=1&mt=8" target="blank" title="Golden Mind in the iTunes store">available in the iTunes app store</a></p>
+                                    </div>
+                                </div>
+                                <img src="images/goldenmind1.png">
+                                <div class="dots cf"><img src="images/dot1of3.png"></div>
+                            </div>
+                            <div id="goldenmind2" class="popupbox">
+                                <div class="banner dark cf">
+                                    <div class="fL">
+                                        <h2>Golden Mind<h2>
+                                        <h1>Meditation Timer<h1>
+                                    </div>
+                                    <div class="fL">
+                                        <h3>a simple app that created a partnership<h3>
+                                        <h4>and launched Plebeian Apps.<h4>
+                                    </div>
+                                </div>
+                                <div class="popup-content">
+                                    <div class="popup-copy">
+                                        <h1>UI design</h1>
+                                        <p>While running, the timer dissappears and the app displays an image whose percent opacity is linked to percent time remaining.</p>
+                                        <p>As time runs out, the image fades to black.</p>
+                                        <p><a href="http://itunes.apple.com/us/app/golden-mind/id466182995?ls=1&mt=8" target="blank" title="Golden Mind in the iTunes store">available in the iTunes app store</a></p>
+                                    </div>
+                                </div>
+                                <img src="images/goldenmind2.png">
+                                <div class="dots cf"><img src="images/dot2of3.png"></div>
+                            </div>
+                            <div id="goldenmind3" class="popupbox">
+                                <div class="banner dark cf">
+                                    <div class="fL">
+                                        <h2>Golden Mind<h2>
+                                        <h1>Meditation Timer<h1>
+                                    </div>
+                                    <div class="fL">
+                                        <h3>a simple app that created a partnership<h3>
+                                        <h4>and launched Plebeian Apps.<h4>
+                                    </div>
+                                </div>
+                                <div class="popup-content">
+                                    <div class="popup-copy">
+                                        <h1>Visual design</h1>
+                                        <p>A combination of a dark, unobtrusive palate and an array of custom display mandalas and images create a subtle tool.</p>
+                                        <p><a href="http://itunes.apple.com/us/app/golden-mind/id466182995?ls=1&mt=8" target="blank" title="Golden Mind in the iTunes store">available in the iTunes app store</a></p>
+                                    </div>
+                                </div>
+                                <img src="images/goldenmind3.png">
+                                <div class="dots cf"><img src="images/dot3of3.png"></div>
+                            </div>
                         </div>
-                    </a>
+                        <!-- end golden mind-->
+                    </section>
                     <a href="signup.html#donate" alt="donate to ned compost">
-                        <div class="button donate cf">
-                            <p>donate</p>
+                        <div class="button customized cf">
+                            <p>get a customized timer for your business or meditation community</p>
                         </div>
                     </a>
                 </aside>
+                </div>
+                </section>
                 <nav class="bottom-border cf">
                 </nav>
+                <div class ="container">
                 <h1 class = "section-header section-header-top">Golden Mind Meditation Timer<a href="http://twitter.com/#!/plebeianapps" target="_blank" class="twit-header">@PlebeianApps</a></h1>
                 <section class = "span2">
                     <p><p class=" " style="height: auto; ">This meditation timer can provide a container for your meditation, yoga, tai chi, and many other such core practices of contemplative learning and engagement with the world. You can also use it for meetings &amp; other timed practices. <br><br>Features: <br><br>•Beautiful meditation time-setting dial. <br>•Wide selection of meditation images &amp; mandalas. <br>•Image fade out in conjunction with remaining time. This is a new time-tracking function which allows you to get a sense for how much time you have remaining in your meditation session without engaging your linear mind. <br>•A variety of bell patterns including the "Golden Bells" which ring in gradually increasing frequency according to the golden ratio as your meditation approaches completion. <br>•An 'About' page which includes <br>-some tips about the integration of meditation with technology <br>-some suggestions for how to use this timer<br>-info about the golden mean<br><br><br>Please enjoy this timer and let us know how you like it as we will be making periodic updates.</p>
@@ -67,6 +155,7 @@
                         <script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
                         <script type="text/javascript" src="http://twitter.com/statuses/user_timeline/plebeianapps.json?callback=twitterCallback2&count=10"></script>
                 </aside>
+                </div>
             </section>
         </section>
      </div>
